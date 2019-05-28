@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voucher_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:saveEnabled="false"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login1"
+    tools:context="com.example.lijuan.myapplication.VoucherInput">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <TextView
+                    android:id="@+id/input_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="录入日期" />
+
+                <Button
+                    android:id="@+id/choose_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="选择日期"
+                    android:onClick="getDate"
+                    android:background="@color/colorPrimary"
+                    android:textColorHint="#ffffff"
+                    android:layout_marginRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="附单据张数:" />
+
+                <EditText
+                    android:id="@+id/appendix_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="13dp"
+                    android:layout_marginRight="25dp"/>
+
+                <Button
+                    android:id="@+id/voucher_input_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColorHint="#ffffff"
+                    android:hint="生成"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="借方合计"
+                    android:textSize="20dp"
+                    android:layout_margin="15dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/total_debit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0.00"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_margin="15dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="贷方合计"
+                    android:textSize="20dp"
+                    android:layout_margin="15dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/total_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0.00"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                   android:layout_margin="15dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="摘要"
+                    android:textSize="20dp"
+                    android:layout_margin="15dp"/>
+
+
+                <Spinner
+                    android:id="@+id/voucher_abstract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/account_abstract"
+                    android:layout_gravity="center_vertical"
+                    ></Spinner>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="总账科目"
+                android:textSize="20dp"
+                android:layout_margin="15dp"/>
+
+            <Spinner
+                android:id="@+id/ledger_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/subject_type">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="明细科目"
+                android:textSize="20dp"
+                android:layout_margin="15dp"/>
+
+            <Spinner
+                android:id="@+id/detail_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="制单人"
+                android:textSize="20dp"
+                android:layout_margin="15dp"/>
+
+            <EditText
+                android:id="@+id/originator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

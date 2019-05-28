@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/account_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:saveEnabled="false"
+    tools:context="com.example.lijuan.myapplication.SubjectManage">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="#fffff6">
+
+        <ImageButton
+            android:id="@+id/subject_manage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fffff6"
+            android:src="@drawable/ic_keyboard_arrow_left_black_36dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科目管理"
+            android:textSize="20dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginRight="113dp"/>
+
+        <ImageButton
+            android:id="@+id/add_subject_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_36dp"
+            android:background="#fffff6"
+            android:textSize="20dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp">
+
+       <!-- <SearchView
+            android:id="@+id/subject_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="搜索科目"></SearchView>-->
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/subject_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

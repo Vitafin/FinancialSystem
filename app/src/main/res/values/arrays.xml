@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="staff_type">
+        <item>管理员</item>
+        <item>普通员工</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>库存现金</item>
+        <item>银行存款</item>
+    </string-array>
+
+    <string-array name="account_direction">
+        <item>收</item>
+        <item>支</item>
+    </string-array>
+
+    <string-array name="subject_type">
+        <item>资产</item>
+        <item>负债</item>
+        <item>共同</item>
+        <item>所有者权益</item>
+        <item>成本</item>
+        <item>损益</item>
+    </string-array>
+
+    <string-array name="def">
+        <item>-名称-</item>
+    </string-array>
+
+    <string-array name="subject_assets">
+        <item>-名称-</item>
+        <item>库存现金</item>
+        <item>银行存款</item>
+        <item>应收账款</item>
+        <item>预付账款</item>
+        <item>应收票据</item>
+        <item>其他应收款</item>
+        <item>坏账准备</item>
+        <item>在途物资</item>
+        <item>原材料</item>
+        <item>库存商品</item>
+        <item>存货跌价准备</item>
+        <item>长期股权投资</item>
+        <item>长期应收款</item>
+        <item>固定资产</item>
+        <item>累计折旧</item>
+        <item>在建工程</item>
+        <item>工程物资</item>
+        <item>固定资产清理</item>
+        <item>无形资产</item>
+        <item>累计摊销</item>
+        <item>长期待摊费用</item>
+        <item>待处理财产损益</item>
+    </string-array>
+    
+    <string-array name="subject_debt">
+        <item>-名称-</item>
+        <item>短期借款</item>
+        <item>应付账款</item>
+        <item>预收账款</item>
+        <item>应付职工薪酬</item>
+        <item>应交税费</item>
+        <item>应付股利</item>
+        <item>应付利息</item>
+        <item>其他应付款</item>
+        <item>长期借款</item>
+        <item>应付债券</item>
+        <item>长期应付款</item>
+    </string-array>
+    
+    <string-array name="subject_share">
+        <item>-名称-</item>
+        <item>衍生工具</item>
+        <item>套期工具</item>
+        <item>被套期项目</item>
+        <item>货币兑换</item>
+    </string-array>
+    
+    <string-array name="subject_ownership_interest">
+        <item>-名称-</item>
+        <item>库存股</item>
+        <item>实收资本</item>
+        <item>资本公积</item>
+        <item>盈余公积</item>
+        <item>本年利润</item>
+        <item>利润分配</item>
+    </string-array>
+    
+    <string-array name="subject_cost">
+        <item>-名称-</item>
+        <item>生产成本</item>
+        <item>制造费用</item>
+        <item>劳务成本</item>
+        <item>研发支出</item>
+    </string-array>
+    
+    <string-array name="subject_profit_loss">
+        <item>-名称-</item>
+        <item>主营业务收入</item>
+        <item>主营业务成本</item>
+        <item>其他业务收入</item>
+        <item>其他业务成本</item>
+        <item>营业外收入</item>
+        <item>营业外支出</item>
+        <item>投资收益</item>
+        <item>营业税金及附加</item>
+        <item>销售费用</item>
+        <item>管理费用</item>
+        <item>财务费用</item>
+        <item>资产减值损失</item>
+        <item>所得税费用</item>
+    </string-array>
+
+    <string-array name="account_abstract">
+        <item>发放工资</item>
+        <item>计提工资</item>
+        <item>付水电房租物业管理费</item>
+        <item>利息收入</item>
+        <item>报销业务招待费</item>
+        <item>报销差旅费</item>
+        <item>提现</item>
+        <item>支付电话费</item>
+        <item>支付银行手续费</item>
+        <item>购入固定资产</item>
+        <item>缴纳地税</item>
+        <item>计提地税</item>
+        <item>计提所得税</item>
+        <item>付货款</item>
+        <item>采购商品</item>
+        <item>收货款</item>
+        <item>现款销售</item>
+        <item>赊销</item>
+    </string-array>
+
+
+</resources>
